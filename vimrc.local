@@ -1,0 +1,26 @@
+nmap <leader>vr :tabedit ~/dotfiles-local/vimrc.local<cr>
+nmap <leader>so :source $MYVIMRC<cr>
+nmap <leader>v :vnew <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr>
+nmap <leader>co ggVG*y
+nnoremap <silent> <Leader>r :TestFile<CR>
+nnoremap <silent> <Leader>l :TestNearest<CR>
+map <Leader>y "*y
+map <Leader>p "*p
+map <Leader>s :w<ENTER>
+map <Leader>< :w<ENTER>
+" todo - leader<> leader+- for quick resizing
+" vsplit leader v
+
+nmap j gj
+nmap k gk
+
+hi ColorColumn ctermbg=lightcyan guibg=blue
+
+let g:ale_linters = {'ruby': ['standardrb']}
+let g:ale_fixers = {'ruby': ['standardrb']}
+
+unmap <C-j>
+unmap <C-k>
+unmap <C-h>
+unmap <C-l>
+
