@@ -10,14 +10,9 @@ map <Leader>y "*y
 map <Leader>p "*p
 map <Leader>s :w<ENTER>
 map <Leader>v :vsplit<ENTER>
-" todo - leader<> leader+- for quick resizing
-" todo - contrast on cursor
-" todo - contrast on active window
 
 nmap j gj
 nmap k gk
-
-" hi ColorColumn ctermbg=darkblue
 
 let g:ale_linters = {'ruby': ['standardrb']}
 let g:ale_fixers = {'ruby': ['standardrb']}
