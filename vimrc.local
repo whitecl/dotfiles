@@ -1,6 +1,6 @@
 nmap <leader>vr :tabedit ~/dotfiles-local/vimrc.local<cr>
 nmap <leader>so :source $MYVIMRC<cr>
-nmap <leader>v :vnew <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr>
+nmap <leader>n :vnew <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr>
 nmap <leader>co ggVG*y
 
 let test#strategy = "vtr"
@@ -8,7 +8,7 @@ nnoremap <silent> <Leader>l :TestNearest<CR>
 
 map <Leader>y "*y
 map <Leader>p "*p
-map <Leader>s :w<ENTER>
+map <Leader>s :vnew scratch.rb<ENTER>
 map <Leader>v :vsplit<ENTER>
 
 nmap j gj
