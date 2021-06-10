@@ -3,7 +3,7 @@ set -g prefix C-s
 
 bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
 bind-key - split-window -v -c '#{pane_current_path}'
-bind-key | split-window -h -c '#{pane_current_path}'
+bind-key / split-window -h -c '#{pane_current_path}'
 bind-key b break-pane -d
 bind-key C-j choose-tree
 
