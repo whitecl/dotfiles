@@ -1,6 +1,8 @@
 nmap <leader>vr :tabedit ~/dotfiles-local/vimrc.local<cr>
 nmap <leader>so :source $MYVIMRC<cr>
 nmap <leader>n :vnew <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr>
+nnoremap <Leader>d :<C-u>%DeleteTrailingWhitespace<CR>
+vnoremap <Leader>d :DeleteTrailingWhitespace<CR>
 nmap <leader>co ggVG*y
 
 let test#strategy = "vtr"
@@ -9,6 +11,7 @@ nnoremap <silent> <Leader>l :TestNearest<CR>
 map <Leader>y "*y
 map <Leader>p "*p
 map <Leader>s :vnew scratch.rb<ENTER>
+" todo: sr, ss, sm for ruby, sql, markdown
 map <Leader>v :vsplit<ENTER>
 
 nmap j gj
@@ -29,3 +32,5 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 let ayucolor="mirage"
 " let ayucolor="dark"
 colorscheme ayu
+
+set relativenumber

@@ -1,3 +1,6 @@
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'christoomey/vim-tmux-runner'
 Plug 'ayu-theme/ayu-vim'
+Plug 'preservim/nerdtree'
+Plug 'inkarkat/vim-ingo-library'
+Plug 'inkarkat/vim-DeleteTrailingWhitespace'
