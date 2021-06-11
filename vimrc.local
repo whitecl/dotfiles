@@ -10,8 +10,12 @@ nnoremap <silent> <Leader>l :TestNearest<CR>
 
 map <Leader>y "*y
 map <Leader>p "*p
-map <Leader>s :vnew scratch.rb<ENTER>
-" todo: sr, ss, sm for ruby, sql, markdown
+
+map <Leader>sr :vnew scratch.rb<ENTER>
+map <Leader>ss :vnew scratch.sql<ENTER>
+map <Leader>sj :vnew scratch.js<ENTER>
+map <Leader>sm :vnew scratch.md<ENTER>
+
 map <Leader>v :vsplit<ENTER>
 
 nmap j gj
