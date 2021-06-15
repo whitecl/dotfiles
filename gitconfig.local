@@ -6,3 +6,5 @@
 	st = status
 [init]
 	defaultBranch = main
+[pull]
+	ff = only
