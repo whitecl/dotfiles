@@ -8,8 +8,8 @@ nmap <leader>co ggVG*y
 let test#strategy = "vtr"
 nnoremap <silent> <Leader>l :TestNearest<CR>
 
-map <Leader>y "*y
-map <Leader>p "*p
+map <Leader>y "+y
+map <Leader>p "+p
 
 map <Leader>sr :vnew scratch.rb<ENTER>
 map <Leader>ss :vnew scratch.sql<ENTER>
