@@ -4,6 +4,7 @@ nmap <leader>n :vnew <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr>
 nnoremap <Leader>d :<C-u>%DeleteTrailingWhitespace<CR>
 vnoremap <Leader>d :DeleteTrailingWhitespace<CR>
 nmap <leader>co ggVG*y
+nmap <leader>b :NERDTree<CR>
 
 let test#strategy = "vtr"
 nnoremap <silent> <Leader>l :TestNearest<CR>
@@ -11,12 +12,12 @@ nnoremap <silent> <Leader>l :TestNearest<CR>
 map <Leader>y "+y
 map <Leader>p "+p
 
-map <Leader>sr :vnew scratch.rb<ENTER>
-map <Leader>ss :vnew scratch.sql<ENTER>
-map <Leader>sj :vnew scratch.js<ENTER>
-map <Leader>sm :vnew scratch.md<ENTER>
+map <Leader>sr :vnew scratch.rb<CR>
+map <Leader>ss :vnew scratch.sql<CR>
+map <Leader>sj :vnew scratch.js<CR>
+map <Leader>sm :vnew scratch.md<CR>
 
-map <Leader>v :vsplit<ENTER>
+map <Leader>v :vsplit<CR>
 
 nmap j gj
 nmap k gk
@@ -35,7 +36,7 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 " let ayucolor="light"
 let ayucolor="mirage"
 " let ayucolor="dark"
-let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_style = 'storm' " available: night, storm
 let g:tokyonight_enable_italic = 1
 colorscheme tokyonight
 
