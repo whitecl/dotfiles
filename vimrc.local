@@ -22,8 +22,10 @@ map <Leader>v :vsplit<CR>
 nmap j gj
 nmap k gk
 
+map <Leader>f :ALEFix<CR>
+
 let g:ale_linters = {'ruby': ['standardrb']}
-let g:ale_fixers = {'ruby': ['standardrb']}
+let g:ale_fixers = {'ruby': ['standardrb'], 'javascript': ['prettier']}
 
 autocmd VimResized * :wincmd =
 " zoom a vim pane, <C-w>= to re-balance
@@ -41,3 +43,7 @@ let g:tokyonight_enable_italic = 1
 colorscheme tokyonight
 
 set relativenumber
+
+let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
+
+let g:fzf_buffers_jump = 1
