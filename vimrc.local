@@ -35,12 +35,9 @@ nnoremap <leader>= :wincmd =<cr>
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-" let ayucolor="light"
-let ayucolor="mirage"
-" let ayucolor="dark"
-let g:tokyonight_style = 'storm' " available: night, storm
-let g:tokyonight_enable_italic = 1
-colorscheme tokyonight
+
+colorscheme onehalfdark
+let g:airline_theme='onehalfdark'
 
 set relativenumber
 
