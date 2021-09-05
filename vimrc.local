@@ -24,8 +24,8 @@ nmap k gk
 
 map <Leader>f :ALEFix<CR>
 
-let g:ale_linters = {'ruby': ['standardrb'], 'javascript': ['eslint']}
-let g:ale_fixers = {'ruby': ['standardrb'], 'javascript': ['prettier']}
+let g:ale_linters = {'ruby': ['standardrb'], 'elixir': ['credo']}
+let g:ale_fixers = {'ruby': ['standardrb'], 'javascript': ['prettier'], 'json': ['prettier'], 'elixir': ['mix_format']}
 
 autocmd VimResized * :wincmd =
 " zoom a vim pane, <C-w>= to re-balance
@@ -33,6 +33,7 @@ nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
 
 set termguicolors
+set textwidth=0
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
